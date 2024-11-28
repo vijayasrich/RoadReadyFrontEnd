@@ -11,6 +11,14 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 //import ProductList from "./ProductList";
+import CarExtraList from "./CarExtraList";
+import CarList from "./CarList";
+import UserList from "./UserList";
+import ReviewList from "./ReviewList";
+import ReservationList from "./ReservationList";
+import PaymentList from "./PaymentList";
+import PasswordResetEmail from './PasswordResetEmail';
+import PasswordResetForm from './PasswordResetForm';
 import Home from "./Home";
 
 function App() {
@@ -22,9 +30,18 @@ function App() {
           <main className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
               <Route element={<PrivateRoute />}>
+              <Route path="/cars" element={<CarList />} />
+              <Route path="/carextras" element={<CarExtraList />} />
+              <Route path="/users" element={<UserList />} />
+              <Route path="/reviews" element={<ReviewList />} />
+              <Route path="/reservations" element={<ReservationList />} />
+              <Route path="/payments" element={<PaymentList />} />
+              <Route path="/reset-password" element={<PasswordResetEmail />} />
+                <Route path="/reset-passwordtoken" element={<PasswordResetForm />} />
+
                 {/*<Route path="/products" element={<ProductList />} />*/}
               </Route>
             </Routes>

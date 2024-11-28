@@ -1,0 +1,54 @@
+/* PaymentList.css */
+
+/* Main container for the payment list */
+.payment-list {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .payment-table th,
+  .payment-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .payment-table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .payment-table td {
+    background-color: #fff;
+  }
+  
+  button {
+    padding: 8px 12px;
+    color: white;
+    background-color: #d9534f;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #c9302c;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  

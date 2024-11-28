@@ -51,5 +51,20 @@ const Login = () => {
     </div>
   );
 };
+const loginUser = (username, password) => {
+  axios.post('/api/login', { username, password })
+    .then(response => {
+      // Store the token in localStorage
+      localStorage.setItem('authToken', response.data.token);
+      
+      // Redirect to dashboard or other page
+      window.location.href = '/dashboard';  // or use React Router
+    })
+    .catch(error => {
+      console.error('Login error:', error);
+      alert('Login failed, please try again.');
+    });
+};
+
 
 export default Login;
