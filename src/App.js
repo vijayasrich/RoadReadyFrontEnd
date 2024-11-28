@@ -17,16 +17,20 @@ function App() {
   return (
     <Router>
       <AuthProvider>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route element={<PrivateRoute />}>
-            {/*<Route path="/products" element={<ProductList />} />*/}
-          </Route>
-        </Routes>
-        <Footer />
+        <div className="page-container">
+          <Header />
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route element={<PrivateRoute />}>
+                {/*<Route path="/products" element={<ProductList />} />*/}
+              </Route>
+            </Routes>
+          </main>
+          <Footer />
+        </div>
         <ToastContainer />
       </AuthProvider>
     </Router>
