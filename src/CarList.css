@@ -1,0 +1,70 @@
+/* CarList.css */
+
+/* Container for the car list */
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Each car card */
+.car-card {
+  width: 250px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for car card */
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Car image styling */
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Car name and price */
+.car-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.car-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.car-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+/* Button for booking */
+.car-card button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.car-card button:hover {
+  background-color: #0056b3;
+}
+
+  

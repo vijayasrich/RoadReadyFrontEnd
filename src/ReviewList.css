@@ -1,0 +1,45 @@
+.review-list {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .review-list h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .review-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .review-table th,
+  .review-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .review-table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .review-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .review-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+  
